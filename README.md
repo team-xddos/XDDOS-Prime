@@ -50,18 +50,43 @@ The tool tries `SOCK_RAW` first (needs root). If that fails, it falls back to `S
 ## Building
 
 ### Requirements
-- Linux (Ubuntu 22.04+ recommended)
-- GCC
-- pthreads (included in glibc)
+- **OS**: Linux — Ubuntu 22.04 LTS (recommended)
+- **Compiler**: GCC
+- **Build tool**: Make
+- **Libraries**: pthreads (included in glibc)
+
+### Install Dependencies (Ubuntu 22.04)
+
+```bash
+# Update package list
+sudo apt update
+
+# Install GCC, Make, and essential build tools
+sudo apt install -y build-essential gcc make
+```
+
+> `build-essential` installs everything you need — GCC, G++, Make, and libc dev headers (includes pthreads).
 
 ### Compile
 
 ```bash
-# Quick build
+# Clone the repo
+git clone https://github.com/team-xddos/XDDOS-Prime.git
+cd XDDOS-Prime
+
+# Quick build (outputs ./rawudp in project root)
 make quick
 
-# Or manual
+# Or compile manually
 gcc -Wall -Wextra -O2 -std=c11 src/rawudp.c -o rawudp -lpthread
+```
+
+### Verify
+
+```bash
+# Check it compiled correctly
+./rawudp
+# Should print the XDDOS PRIME banner and usage info
 ```
 
 ---
