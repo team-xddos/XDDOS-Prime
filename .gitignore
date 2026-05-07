@@ -1,0 +1,11 @@
+# Build artifacts
+build/
+bin/
+rawudp
+
+# Original binary
+rawudp.txt
+
+# OS files
+.DS_Store
+Thumbs.db
