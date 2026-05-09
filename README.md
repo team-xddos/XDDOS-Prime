@@ -1,5 +1,5 @@
 # XDDOS PRIME
-
+##⚠️ GitHub is Deleting Clones and Forks of this Repo we recommand download and reupload for usage thank you
 **High-performance multi-threaded UDP flood tool for network stress testing.**
 
 By **TEAM XDDOS** — **XDMEOW** (Shadow) & **XDCAT** (Vansh)
